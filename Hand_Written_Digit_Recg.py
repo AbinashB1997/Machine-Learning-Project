@@ -16,7 +16,7 @@ features, labels = digits.data,digits.target
 clf = tree.DecisionTreeClassifier()
 #clf = RandomForestClassifier()
 clf.fit(features, labels)
-img = misc.imread("Images/seven.png")   // Give The Path Of The Image
+img = misc.imread("Images/seven.png")   # Give The Path Of The Image
 img = misc.imresize(img, (8,8))
 img = img.astype(digits.images.dtype)
 img = misc.bytescale(img)
